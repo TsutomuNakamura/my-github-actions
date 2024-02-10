@@ -70,7 +70,12 @@ $ git add .
 $ git commit -m "Added a first drawio file"
 ```
 
-##Copy GitHub Actionses workflow file
+## Modify Github Actionses workflow file
+You can change variables `env.dest_repository_name` and `env.dest_repository_name` in workflow file(export-drawio-and-push.yml).
+* `env.dest_repository_name`: Repository name that you want to push drawio resources to.
+* `env.dest_repository_owner_name`: Owner name of the repository that you want to push drawio resources to.
+
+## Copy GitHub Actionses workflow file
 Copy this GitHub Actionses workflow file(export-drawio-and-push.yml) to the repository(repository-push-from) that you want to run it.
 
 ```
