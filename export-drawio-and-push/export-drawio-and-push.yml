@@ -81,7 +81,7 @@ jobs:
           path: ${{ env.dest_repository_name }}
           # You have to register ssh private key to push resources to the destination.
           # Refer to the document in https://github.com/TsutomuNakamura/my-github-actions/tree/main/export-drawio-and-push
-          ssh-key: ${{ secrets.SSH_PRIVATE_KEY_TO_TSUTOMNAKAMURA_REFERENCES }}
+          ssh-key: ${{ secrets.SSH_PRIVATE_KEY_TO_DESTINATION_REPOSITORY }}
           persist-credentials: true
 
       - uses: actions/download-artifact@master
